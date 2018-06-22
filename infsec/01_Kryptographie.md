@@ -1,8 +1,8 @@
 # Kriptographie (Josef Bürgler)
 ## Was ist Kryptographie 
 Kriptograpihe fasst 2 Teilgebiete zusammen:
-* ** Kryptographie: ** beschäftigt sich mit der Entwicklung von Algorithmen
-* ** Kryptoanalyse: ** untersucht die Sicherheit von Verschlüsselungsalgorithmen.
+* **Kryptographie:** beschäftigt sich mit der Entwicklung von Algorithmen
+* **Kryptoanalyse:** untersucht die Sicherheit von Verschlüsselungsalgorithmen.
 
 ### Secret- / Privatekey Cryptography (Symmetrische Verschlüsselung)
 Die Secret-/Privatekey Cryptography befasst sich mit von Alters her gewohnten Methode des Ver- und Entschlüsselns mit einem einzigen, jedem Kommunikationspartner bekannten Schlüssel
