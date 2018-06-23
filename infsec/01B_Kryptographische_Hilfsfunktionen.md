@@ -182,8 +182,6 @@ Einige mögliche Einweg-Funktionen mit Falltür sind:
 \end{figure}
 
 ### Exponentation/RSA/Rabin
-
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{images/01B-Einwegfunktion-overview.png}
