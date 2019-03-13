@@ -63,7 +63,7 @@ Now you can create a Class or just use Lambdas (Functional Programming)
 
 What is the Difference between those two?
 | Difference | Comparable | Comparator |
-| - | - | - |
+|------------|------------|------------|
 | Package name | java.lang | java.util |
 | Interface must be implemented by class comparing? | Yes, silly | No |
 | Method name in interface | compareTo | compare |
