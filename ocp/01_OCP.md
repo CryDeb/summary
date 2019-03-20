@@ -27,6 +27,15 @@ When do i use what?
 
 ### List Interface methods
 ![AltSchissle](img/OCP_KnowbasisLists.png)
+#### New in Java 8
+There has been a fiew new functions in java 8. 
+* ```boolean removeIf(Predicate<?super E> filter)``` to remove from the List
+* ```void replaceAll(UnaryOperator<E> o)``` to replace all Elements by the lambda function.
+* ```void forEach(Consumer<E> o)``` to iterate over the List.
+
+
+
+
 
 ### Queue Interface methods
 ![AltSchissle](img/OCP_ArrayDeque_1.png)
@@ -34,6 +43,11 @@ When do i use what?
 
 ### Map Interface methods
 ![AltSchissle](img/OCP_KnowbasisMap.png)
+#### New in Java 8
+There are some new functions comming with Java 8
+* ```V put(K key, V value)``` will replace existing keys or add it to the map
+* ```V putIfAbsent(K key, V value)``` will add entry the map put wont overrite it unless the value in the map is null
+* ```V merge(K key, V value, BiFunction<? super V, ? super V, ? extends V> remappingFunction) ``` will add ether existing value to the map or the new one passed by these function based on the BiFunction mapping algorythm.
 
 ## Comparable
 Comparable is an Interface. It is there so you implement the method to compare to objects with each other. The Interface looks like this
@@ -74,7 +88,9 @@ What is the Difference between those two?
 
 ## Sorting
 Just call the static method sort from Collection.sort()
-This sort takes ether one argument or two. The first one is the Collection you want to get sorted. The second one is a Comparator. It is Optional as long as the Class stored in the Collection implements Comparable.
+This sort takes ether one argument or two. The first one is the Collection you want to get sorted. The second one is a Comparator. The second one is optional as long as the Class stored in the Collection implements Comparable.
 
 Important: A Tree\* can only store Classes that implements Comparable -> cause it needs to sort things
+
+
 
