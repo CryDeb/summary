@@ -48,6 +48,19 @@ There are some new functions comming with Java 8
 * ```V put(K key, V value)``` will replace existing keys or add it to the map
 * ```V putIfAbsent(K key, V value)``` will add entry the map put wont overrite it unless the value in the map is null
 * ```V merge(K key, V value, BiFunction<? super V, ? super V, ? extends V> remappingFunction) ``` will add ether existing value to the map or the new one passed by these function based on the BiFunction mapping algorythm.
+* ```V computeIfPresen(K key, BiFunction <? super K, ? super V, ? extends V> remappingFunction) ``` If the the value for the Key is present and non-null, attempts to compute a new mapping given the key and its current mapped value.
+* ```V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunction) ``` If the specified key is not already associeted with a value (or is mapped to null), attempts to compute its value using the given function. If it returns null it will not get stored.
+
+##### BiFunction & Function
+```Java
+public interface BiFunction<T,U,R> {
+	public R apply (T t, U u);
+}
+
+public interface Function<T, R> {
+	public R apply(T t);
+}
+```
 
 ## Comparable
 Comparable is an Interface. It is there so you implement the method to compare to objects with each other. The Interface looks like this
