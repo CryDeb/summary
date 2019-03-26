@@ -51,6 +51,8 @@ There are some new functions comming with Java 8
 * ```V computeIfPresen(K key, BiFunction <? super K, ? super V, ? extends V> remappingFunction) ``` If the the value for the Key is present and non-null, attempts to compute a new mapping given the key and its current mapped value.
 * ```V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunction) ``` If the specified key is not already associeted with a value (or is mapped to null), attempts to compute its value using the given function. If it returns null it will not get stored.
 
+![AltSchissle](img/OCP_MergeComputeIfAbsentComputeIfPresent.png)
+
 ##### BiFunction & Function
 ```Java
 public interface BiFunction<T,U,R> {
